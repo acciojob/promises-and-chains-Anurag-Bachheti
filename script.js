@@ -8,7 +8,7 @@ function votePower(){
 	let name = document.getElementById("name").value;
 
 	if(!age || !name){
-		alert("Please enter valid details.");
+		alert("Please enter valid details");
 		return;
 	}
 		if(age < 18){
