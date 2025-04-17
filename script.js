@@ -1,15 +1,16 @@
 
-let button  =  document.getElementById("name");
+let button  =  document.getElementById("btn");
 
-button.addEventListener("click", votePower;
+button.addEventListener("click", votePower);
 
 function votePower(){
-	let age = document.getElementById("age").value;
-	let name = Number(document.getElementById("name").value);
+	let age = Number(document.getElementById("age").value);
+	let name = document.getElementById("name").value;
 
 	if(!age || !name){
-		alert("Please enter valid details.")
-	}else{
+		alert("Please enter valid details.");
+		return;
+	}
 		if(age < 18){
 			setTimeout(()=> {
 				alert(`Oh sorry ${name}. You aren't old enough.`)
@@ -18,6 +19,5 @@ function votePower(){
 			setTimeout(()=> {
 				alert(`Welcome, ${name}. You can vote.`)
 			}, 4000)
-		}
 	}
 }
